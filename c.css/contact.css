@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: lightcyan;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+
+
+
+/*NAV*/
+
+nav,
+.nav-links {
+  display: flex;
+
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+ 
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  
+  .contact-info{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .text__p1 {
+    text-align: center;
+  }
+
+  /* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+
+
+
+  footer {
+  height: 10vh;
+  margin: 0 1rem;
+  
+
+}
+
+footer p {
+  text-align: center;
+
+}
+
+@media screen and (max-width: 1400px) {
+    
+    #contact{
+        height: fit-content;
+    
+    }
+
+    
+  }
+  
+  @media screen and (max-width: 1200px) {
+    
+    section{
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+   
+    
+  }
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+ 
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info{
+    flex-wrap: wrap;
+
+  }
+ 
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+    text-align: center;
+  }
+ 
+
+  .title {
+    font-size: 2rem;
+  }
+ 
+}

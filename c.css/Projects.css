@@ -1,0 +1,263 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color:lightcyan;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.btn {
+  transition: all 300ms ease;
+}
+ 
+/*sections*/
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+
+  /* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+  
+  .btn-color-1,
+  .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+  
+  .btn-color-1:hover,
+  .btn-color-2:hover {
+    cursor: pointer;
+  }
+  
+  .btn-color-1,
+  .btn-color-2:hover {
+    background:black ;
+    color:white;
+  }
+  
+  .btn-color-1:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .btn-color-2 {
+    background: none;
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .btn-container {
+    gap: 1rem;
+  }
+  
+  /* ABOUT SECTION */
+  
+  
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+  }
+  
+  
+  
+  .about-containers{
+    display: flex;
+  }
+
+
+
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background:lightcyan;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+
+  /* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+  }
+  
+  .color-container {
+    border-color:black;
+    background: rgb(224, 255, 255);
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 65%;
+    height: 50%;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: black;
+  }
+  
+  .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+
+  .experience-sub-title {
+    color: rgb(53, 14, 14);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+   
+  }
+  
+
+  .section__text__p1 {
+    text-align: center;
+  }
+
+  /*footer*/
+  nav,
+  .nav-links {
+    display: flex;
+  
+  }
+  
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+   
+  }
+  
+  .nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  footer {
+    height: 10vh;
+    margin: 10rem 1rem;
+    
+  
+  }
+  
+  footer p {
+    text-align: center;
+  
+  }
+
+
+
+@media screen and (max-width: 1400px) {
+  .about-containers {
+    flex-wrap: wrap;
+  }
+ 
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+ 
+  section
+   {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+ 
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  footer {
+    height: 40vh;
+  }
+ 
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+ 
+  .nav-links {
+    gap: 0.5rem;
+   
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  
+}

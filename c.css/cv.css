@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    position:relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color:#A1A4AC ;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    
+    }
+
+    /*****************************************menu******************************/
+
+
+.menu_list {
+    list-style: none;
+    display: flex;
+}
+.menu_list-item{
+    position: relative;
+    margin: 50px ;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu_list-link {
+    position: relative;
+     
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.menu_list-link::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    height: 2px;
+    width: 0%;
+    background:#FFFFFF ;
+
+
+}
+/********************************background************************************/
+
+.illustration {
+    height: 100vh;
+    position:absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/************************************content**********************************/
+.text{
+    margin: 150px 70px;
+ 
+}
+
+.about {
+    font-size:50px;
+    font-weight:600 ;
+    color:rgba(255, 255, 255, 1) ;
+    padding-bottom:10px;
+  
+
+
+
+}
+.exsp {
+    font-size:30px ;
+    font-weight:400 ;
+    color:#FFFFFF ;
+    padding-bottom: 10px;
+}
+
+.app-link {
+    text-decoration: none;
+  
+
+}
+
+.app-link:hover img {
+    transform: scale(1.1);
+}
+
+.app-link + .app-link{
+    margin-left:15px;
+
+
+}
+
+
+/***********************************respovsive*****************************/
+@media screen  and (max-width:979px) {
+   body{
+    display: block;
+    width: 100%;
+   
+   }
+
+   .about{
+    font-size: 25px;
+   }
+
+   .exsp{
+    font-size: 15px;
+   }
+   .menu_list-item{
+     margin: 20px;
+     
+   }
+
+   .app-link {
+      width: 20px;
+   }
+   .illustration{
+    width: 100%;
+   }
+
+   .menu_list-link{
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 10px;
+    color:#A1A4AC;
+
+
+
+   }
+}
+
